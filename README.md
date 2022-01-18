@@ -22,5 +22,8 @@ Instructions: -
     - Select 'Run Workflow', set to branch you're working from and select 'Run workflow'
     - Navigate to GitHub action 'AWS using OIDC' and review the logs created by the runner
 
-Please see my [blog article](https://markrosscloud.medium.com/using-open-id-connect-to-authenticate-to-aws-from-github-acd46bf1727e) for more information.
-https://github.com/hashicorp/go-azure-helpers/issues/91
+NOTE: -
+ - To deploy from anything other than the main branch you need to alter the repository_branch_or_env variable from its default
+ - The Azure Terraform provider doesn't support using az to login with Open ID connect at the present time - https://github.com/hashicorp/go-azure-helpers/issues/91
+
+Please see my [blog article](https://markrosscloud.medium.com/using-open-id-connect-to-authenticate-to-azure-from-github-fc4240efbee5) for more information.
