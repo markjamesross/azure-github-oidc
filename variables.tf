@@ -27,9 +27,9 @@ variable "azure_region" {
   default     = "uksouth"
 }
 variable "repository_branch_or_env" {
-  description = "Details on which branch or environment to deploy to.  Environment needs to be in the format 'environment:<env_name>', branch needs to be in the format 'branch:main'"
+  description = "Details on which branch or environment to deploy to.  Environment needs to be in the format 'environment:<env_name>', branch needs to be in the format 'ref:refs/heads/<branch_name>'"
   type        = string
-  default     = "branch:main"
+  default     = "ref:refs/heads/main"
 }
 variable "azuread_tenant_id" {
   description = "Azure AD tenant to deploy to"
